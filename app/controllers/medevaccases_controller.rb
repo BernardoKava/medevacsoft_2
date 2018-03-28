@@ -5,7 +5,7 @@ class MedevaccasesController < ApplicationController
   # GET /medevaccases
   # GET /medevaccases.json
   def index
-    @medevaccases = Medevaccase.all
+    @medevaccases = current_user.medevaccases.all
   end
 
   # GET /medevaccases/1
@@ -15,7 +15,7 @@ class MedevaccasesController < ApplicationController
 
   # GET /medevaccases/new
   def new
-    @medevaccase = Medevaccase.new
+    @medevaccase = current_user.medevaccases.new
   end
 
   # GET /medevaccases/1/edit
@@ -25,7 +25,7 @@ class MedevaccasesController < ApplicationController
   # POST /medevaccases
   # POST /medevaccases.json
   def create
-    @medevaccase = Medevaccase.new(medevaccase_params)
+    @medevaccase = current_user.medevaccases.new(medevaccase_params)
 
     respond_to do |format|
       if @medevaccase.save
