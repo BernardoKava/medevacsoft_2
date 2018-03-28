@@ -38,7 +38,7 @@ textarea {
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+  line-height: 1px;
 }
 
 h1 {
@@ -60,6 +60,7 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+
 }
 
 /* header */
@@ -197,7 +198,7 @@ input {
   height: auto !important;
 }
 
-/* Users index */
+/* Users index
 
 .users {
   list-style: none;
@@ -208,6 +209,7 @@ input {
     border-bottom: 1px solid $gray-lighter;
   }
 }
+*/
 
 /* Tables */
 
@@ -219,6 +221,30 @@ th, td {
 tr:nth-child(even){background-color: #f2f2f2}
 
 th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+/*dashboard menu*/
+
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu li {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu li:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu li.active {
   background-color: #4CAF50;
   color: white;
 }

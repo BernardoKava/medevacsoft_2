@@ -1,11 +1,10 @@
 class StaticPagesController < ApplicationController
 
   def home
-    # users are redirected to the medevaccases upon login.
+    # users are redirected to the dashboard upon login.
     if current_user
-      redirect_to medevaccases_path
+      redirect_to dashboard_index_url
     end
-
   end
 
   def help

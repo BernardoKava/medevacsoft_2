@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
 
-  def new
+  def gravatar
 
   end
-
 end

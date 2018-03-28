@@ -17,16 +17,23 @@
 
 <body>
   <%= render 'layouts/header' %>
+  <br>
+  <% if current_user %>
+    <%= render 'users/gravatar'%>
+  <% else %>
 
+  <% end %>
 
   <div class="container">
-    <br>
-    <br>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
+    <div class="jumbotron">
+      <h1>Medevac Mission Manager </h1>
+    </div>
 
     <%= yield %>
+
     <%= render 'layouts/footer' %>
+    <%= debug(params) if Rails.env.development? %>
   </div>
   <%= render 'layouts/widefooter' %>
 </body>

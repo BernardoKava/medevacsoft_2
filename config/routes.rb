@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
 
+  get 'dashboard/index'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   resources :medevaccases
-  get 'users/new'
+  get 'users/gravatar'
 
   root 'static_pages#home'
   get  '/help',     to: 'static_pages#help'

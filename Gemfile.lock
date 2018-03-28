@@ -73,6 +73,7 @@ GEM
     formatador (0.2.5)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    gravtastic (3.2.6)
     guard (2.13.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, <= 4.0)
@@ -263,6 +264,7 @@ DEPENDENCIES
   byebug (= 9.0.6)
   coffee-rails (= 4.2.2)
   devise
+  gravtastic
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
   guard-rails (~> 0.7.2)

@@ -1,3 +1,4 @@
+<% provide(:title, "Case Form") %>
 <%= form_with(model: medevaccase, local: true) do |form| %>
   <% if medevaccase.errors.any? %>
     <div id="error_explanation">
