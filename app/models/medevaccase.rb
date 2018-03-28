@@ -1,0 +1,2 @@
+class Medevaccase < ApplicationRecord
+end
